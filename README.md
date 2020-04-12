@@ -45,6 +45,11 @@ After the instalation ends, you can exit the docker container
     
     exit
 
+Grant write permissions in the database file
+
+    cd src
+    sudo chmod 777 database/database.sqlite    
+
 At this point, you should be able to visit the app URL on the browser at http://localhost:8888
 
 When you want to stop the containers run `docker-compose kill`, and if you want to remove them run `docker-compose rm`
